@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jackson Web Solutions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h2>Jackson Web</h2>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <h1>Websites That Help Businesses Get Customers</h1>
+    <p>I design clean, mobile-friendly landing pages for small businesses.</p>
+    <a href="#contact" class="btn">Work With Me</a>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <h2>Services</h2>
+    <ul>
+      <li>Business landing pages</li>
+      <li>Mobile-friendly design</li>
+      <li>WhatsApp contact integration</li>
+      <li>Fast & clean HTML/CSS websites</li>
+    </ul>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="section" id="portfolio">
+    <h2>My Work</h2>
+
+    <div class="card">
+      <h3>Business Landing Page (Demo)</h3>
+      <p>
+        A clean landing page designed to help small businesses
+        attract customers and receive messages via WhatsApp.
+      </p>
+      <ul>
+        <li>Responsive (mobile-first)</li>
+        <li>WhatsApp contact</li>
+        <li>Fast loading</li>
+      </ul>
+      <p><strong>Status:</strong> Demo Project</p>
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <h2>Contact Me</h2>
+
+    <form onsubmit="sendWhatsApp(); return false;" class="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Jackson Web Solutions</p>
+  </footer>
+
+  <!-- WHATSAPP SCRIPT -->
+  <script>
+    function sendWhatsApp() {
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let message = document.getElementById("message").value;
+
+      let url = "https://wa.me/+254741590397text="
+        + "Name: " + name + "%0a"
+        + "Email: " + email + "%0a"
+        + "Message: " + message;
+
+      window.open(url, "_blank");
+    }
+  </script>
+
+</body>
+</html>

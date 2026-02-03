@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero section */
+.hero {
+  background: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+.btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+/* Content */
+.content,
+.form-section {
+  background: white;
+  margin: 1rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 1rem;
+}
+
+input,
+textarea {
+  padding: 0.7rem;
+  margin-top: 0.3rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+.content,
+.form-section {
+  max-width: 600px;
+width: 90%;
+}
+.container {
+  max-width: 800px;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+h1 {
+  font-size: 2.2rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+  }
+
+  input, textarea {
+    width: 100%;
+    font-size: 1rem;
+  }
+}@media (max-width: 600px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+  }
+
+  input, textarea {
+    width: 100%;
+    font-size: 1rem;
+  }
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+  }
+  input, textarea {
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+ 
